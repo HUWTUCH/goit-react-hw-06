@@ -1,5 +1,5 @@
 import css from './Contact.module.css'
-const Contact = ({ contact, onDelete}) => {
+const Contact = ({ contact, onDelete }) => {
     const { name, number } = contact;
     return (
         <li className={css.items}>
@@ -7,7 +7,7 @@ const Contact = ({ contact, onDelete}) => {
                 <p>Name: {name}</p>
                 <p>Number: {number}</p>
             </div>
-            <button onClick={() => onDelete(contact.id)}>Delete</button>
+            <button onClick={onDelete}>Delete</button>
         </li>
     );
 };
